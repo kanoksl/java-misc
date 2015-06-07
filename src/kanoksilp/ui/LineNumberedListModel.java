@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package kanoksilp.ui;
 
 import java.util.ArrayList;
@@ -12,12 +7,12 @@ import javax.swing.AbstractListModel;
  *
  * @author Kanoksilp
  */
-public class SimpleLineNumberedListModel extends AbstractListModel<Object> {
+public class LineNumberedListModel extends AbstractListModel<Object> {
 
 	private ArrayList<? extends Object> data;
 	private int digits = 0;
 
-	public SimpleLineNumberedListModel(ArrayList<? extends Object> data) {
+	public LineNumberedListModel(ArrayList<? extends Object> data) {
 		this.data = data;
 	}
 
@@ -31,6 +26,11 @@ public class SimpleLineNumberedListModel extends AbstractListModel<Object> {
 		return data.get(index);
 	}
 
+	/**
+	 * Get a string representing line number of the object in the list.
+	 * @param o An object (item) to look up.
+	 * @return Line number string, zero-padded according to max number of items.
+	 */
 	public String lineNumberOf(Object o) {
 		if (digits == 0) {
 			int max = data.size();

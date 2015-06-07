@@ -14,7 +14,7 @@ import static kanoksilp.util.TestingUtil.out;
  *
  * @author Kanoksilp
  */
-public class SimpleLineNumberedListCellRenderer
+public class LineNumberedSimpleListCellRenderer
 		extends JPanel implements ListCellRenderer {
 
 	private final JPanel lineNumberPanel;
@@ -40,7 +40,7 @@ public class SimpleLineNumberedListCellRenderer
 	private static final Color COLOR_SELECTED_ITEM_BG = Color.decode("#737CA1");
 	private static final Color COLOR_SELECTED_ITEM_FG = Color.WHITE;
 
-	public SimpleLineNumberedListCellRenderer() {
+	public LineNumberedSimpleListCellRenderer() {
 		lineNumberPanel = new JPanel();
 
 		mainTextLabel = new JLabel();
@@ -74,7 +74,7 @@ public class SimpleLineNumberedListCellRenderer
 	public Component getListCellRendererComponent(JList list, Object value,
 			int index, boolean isSelected, boolean cellHasFocus) {
 
-		lineNumberLabel.setText(((SimpleLineNumberedListModel) list.getModel())
+		lineNumberLabel.setText(((LineNumberedListModel) list.getModel())
 				.lineNumberOf(value));
 		mainTextLabel.setText("  " + value.toString());
 

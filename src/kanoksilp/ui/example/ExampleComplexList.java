@@ -61,7 +61,7 @@ class ExampleComplexList {
 
 		// Set the cell renderer and model:
 		this.list.setCellRenderer(new ComplexListCellRenderer());
-		this.list.setModel(new ComplexListModel(data));
+		this.list.setModel(new ObjectArrayListModel(data));
 
 		// Also some example event listeners:
 		this.list.addMouseListener(new MouseAdapter() {

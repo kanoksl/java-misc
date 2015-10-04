@@ -27,7 +27,7 @@ public class ComplexListCellRenderer
 	private static final Font FONT_TEXT_MAIN = new Font(
 			"Segoe UI", Font.BOLD, 12);
 	private static final Font FONT_TEXT_INFO = new Font(
-			"Segoe UI", Font.PLAIN, 10);
+			"Segoe UI", Font.PLAIN, 11);
 
 	private static final int LAYOUT_THIS_HGAP = 0;
 	private static final int LAYOUT_THIS_VGAP = 0;

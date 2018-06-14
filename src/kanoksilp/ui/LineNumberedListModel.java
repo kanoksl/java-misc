@@ -1,6 +1,6 @@
 package kanoksilp.ui;
 
-import java.util.ArrayList;
+import java.util.List;
 import javax.swing.AbstractListModel;
 
 /**
@@ -9,10 +9,10 @@ import javax.swing.AbstractListModel;
  */
 public class LineNumberedListModel extends AbstractListModel<Object> {
 
-	private ArrayList<? extends Object> data;
+	private List<? extends Object> data;
 	private int digits = 0;
 
-	public LineNumberedListModel(ArrayList<? extends Object> data) {
+	public LineNumberedListModel(List<? extends Object> data) {
 		this.data = data;
 	}
 

@@ -1,13 +1,13 @@
 package kanoksilp.ui;
 
-import java.util.ArrayList;
+import java.util.List;
 import javax.swing.AbstractListModel;
 
-public class ObjectArrayListModel extends AbstractListModel<Object> {
+public class ObjectListModel extends AbstractListModel<Object> {
 
-	private ArrayList<? extends Object> data;
+	private List<? extends Object> data;
 
-	public ObjectArrayListModel(ArrayList<? extends Object> data) {
+	public ObjectListModel(List<? extends Object> data) {
 		this.data = data;
 	}
 
